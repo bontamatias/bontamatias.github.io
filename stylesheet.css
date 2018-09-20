@@ -69,7 +69,11 @@ main {
 
 /*SPLASH PAGE*/
 
-#splash{
+#headerfix {
+	height: 5em;
+}
+
+#splash {
 	height: auto;
 	background: #DEE3E6; /* fallback for old browsers */
 	background: -webkit-linear-gradient(left, #00D787, #00B4AF);
@@ -78,7 +82,7 @@ main {
 	background: linear-gradient(to right, #00D787, #00B4AF);
 }
 
-#splash p{
+#splash p {
 	font-family: 'Roboto', sans-serif;
 	font-variant: small-caps;
 	text-transform: uppercase;
@@ -89,11 +93,11 @@ main {
 	padding: 0em 0em 0em 0em;
 }
 
-.mainlogocontainer{
+.mainlogocontainer {
 	padding: 0 0 0 0;
 	text-align: center;
 }
 
-.mainlogo{
+.mainlogo {
 	padding: 0 0 0 0;
 }

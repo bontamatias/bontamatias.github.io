@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-header{
+header {
 	height: 4em;
 	width: 100%;
 	top: 0;
@@ -11,7 +11,7 @@ header{
 	z-index: 100;
 }
 
-.headerbrandingcontainer{
+.headerbrandingcontainer {
 	float: left;
 	display: table;
 	height: 100%;
@@ -19,23 +19,23 @@ header{
 	text-align: center;
 }
 
-.headerbranding{
+.headerbranding {
 	padding: 0em 1em 0em 1em;
 	display: table-cell;
 	vertical-align: middle;
 }
 
-.headerlogo{
+.headerlogo {
 	padding: 0 0 0 0;
 }
 
-.sitenavcontainer{
+.sitenavcontainer {
 	height: 100%;
 	float: right;
 	display: table;
 }
 
-.sitenav{
+.sitenav {
 	position: relative;
 	width: auto;
 	height: auto;
@@ -45,19 +45,19 @@ header{
 	vertical-align: middle;
 }
 
-.sitenav ul{
+.sitenav ul {
 	list-style-type: none;
 	margin-right: 1em;
 	margin-left: 1em;
 }
 
-.sitenav ul li{
+.sitenav ul li {
 	display: inline-block;
 	margin-left: 1em;
 	margin-right: 1em;
 }
 
-.navbutton span{
+.navbutton span {
 	position: relative;
 	display: block;
 	width: 100%;
@@ -65,7 +65,7 @@ header{
 	color: #FFFFFF;
 }
 
-.navbutton{
+.navbutton {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 100;
 	text-align: center;
