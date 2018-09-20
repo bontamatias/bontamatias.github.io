@@ -8,7 +8,7 @@ footer {
 	position: relative;
 }
 
-.colorboxes {
+#colorboxes {
 	overflow: hidden;
 	width: 100vw;
 	height: auto;
@@ -60,7 +60,7 @@ footer {
 	background: #DEE3E6;
 }
 
-.colorvalues {
+#colorvalues {
 	overflow: hidden;
 	width: 100vw;
 	height: auto;
