@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+footer{
+	overflow: hidden;
+	width: auto;
+	height: auto;
+	z-index: 100;
+	position: relative;
+}
+
+.colorboxes{
+	overflow: hidden;
+	width: 100vw;
+	height: auto;
+}
+
+.colorbox{
+	float: left;
+	height: 10vw;
+	width: 10vw;
+}
+
+.color1{
+	background: #000000;
+}
+
+.color2{
+	background: #111111;
+}
+
+.color3{
+	background: #363636;
+}
+
+.color4{
+	background: #474747;
+}
+
+.color5{
+	background: #A8A8A8;
+}
+
+.color6{
+	background: #F8F8F8;
+}
+
+.color7{
+	background: #FFFFFF;
+}
+
+.color8{
+	background: #00D787;
+}
+
+.color9{
+	background: #00B4AF;
+}
+
+.color10{
+	background: #DEE3E6;
+}
+
+.colorvalues{
+	overflow: hidden;
+	width: 100vw;
+	height: auto;
+}
+
+.colortag{
+	height: 5vw;
+	width: 10vw;
+	float: left;
+	text-align: center;
+}
+
+.colortag p{
+	font-family: 'Source Code Pro', monospace;
+	font-weight: 200;
+	text-align: center;
+	font-size: 1.5vw;
+	font-variant: small-caps;
+	text-transform: uppercase;
+	color: #000000;
+
+}
