@@ -30,12 +30,19 @@
 					momentum: false,
 					snap: 'li',
 					mouseWheel: true,
-					mouseWheelSpeed: 1,
 					keyBindings: true,
 					momentum: false,
 					bounce: true,
 					bounceTime: 1000,
-					snapSpeed: 1500
+					snapSpeed: 1500,
+					keyBindings: {
+						pageUp: 34,
+						pageDown: 33,
+						end: 35,
+						home: 36,
+						up: 40,
+						down: 38
+					}
 		
 				});
 			}
@@ -51,7 +58,7 @@
 	<body onload="loaded()">
 		<header>
 			<div class="headerbrandingcontainer">
-				<div class="headerbranding">
+				<!--<div class="headerbranding">
 					<svg class="headerlogo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0"
 					viewBox="0 0 1000 1000" height="3em">
 					<style type="text/css">
@@ -64,7 +71,7 @@
 					<path class="st0" d="M530,350v600c165.7,0,300-134.3,300-300C830,484.3,695.7,350,530,350z M560,918.4V381.6
 					C695,396.6,800,511,800,650C800,789,695,903.4,560,918.4z"/>
 					</svg>
-				</div>
+				</div>-->
 			</div>
 
 			<div class="sitenavcontainer">
@@ -98,13 +105,14 @@
 							<path class="st1" d="M530,350v600c165.7,0,300-134.3,300-300C830,484.3,695.7,350,530,350z M560,918.4V381.6
 							C695,396.6,800,511,800,650C800,789,695,903.4,560,918.4z"/>
 							</svg>
-
-							<p>CircleSquared Design</p>
 							</div>
-						
+							
+							<p>CircleSquared Design</p>
+							
 						</li>
 						
-						
+						<li class="page">
+						</li>
 						
 						<li id="bottom">
 							<section id="colorboxes">
