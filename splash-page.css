@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+#splash {
+	height: 100vh;
+/*	background: #DEE3E6;  fallback for old browsers 
+	background: -webkit-linear-gradient(left, #00D787, #00B4AF);
+	background: -o-linear-gradient(left, #00D787, #00B4AF);
+	background: -moz-linear-gradient(left, #00D787, #00B4AF);
+	background: linear-gradient(to right, #00D787, #00B4AF);*/
+	background: #F8F4E3;
+}
+
+#splash p {
+	font-family: 'IBM Plex Sans', sans-sesrif;
+	font-weight: 700;
+/*	font-variant: small-caps;*/
+/*	text-transform: uppercase;*/
+	text-align: center;
+	font-size: 5em;
+/*	letter-spacing: .1em;*/
+	color: #252323;
+	padding: 0em 0em 0em 0em;
+}
+
+#mainlogocontainer {
+	padding: 0 0 0 0;
+	text-align: center;
+}
+
+#mainlogo {
+	padding: 0 0 0 0;
+}

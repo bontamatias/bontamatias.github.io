@@ -12,6 +12,10 @@ header {
 	vertical-align: middle;
 }
 
+.headerfix {
+	height: 5em;
+}
+
 .headerbrandingcontainer {
 	float: left;
 	display: table;
@@ -61,7 +65,7 @@ header {
 .navbutton span {
 	position: relative;
 	display: block;
-	color: #FFFFFF;
+	color: #252323;
 	padding: 0.5em 1.5em 0.5em 1.5em ;
 }
 
@@ -71,7 +75,7 @@ header {
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: 1em;
+	font-size: 15px;
 	background: none;
 	outline: none !important;
 	cursor: pointer;
@@ -85,7 +89,7 @@ header {
 	content: "";
 	height: 15px;
 	width: 3px;
-	background: #FFFFFF;
+	background: #252323;
 	cursor: pointer;
 	transition: all 0.3s ease;
 }
@@ -113,7 +117,7 @@ header {
 	content: "";
 	width: 15px;
 	height: 3px;
-	background: #FFFFFF;
+	background: #252323;
 	transition: all 0.3s ease;
 }
 
