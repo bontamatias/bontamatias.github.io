@@ -21,7 +21,8 @@
 	font-size: 5em;
 /*	letter-spacing: .1em;*/
 	color: #252323;
-	padding: 0em 0em 0em 0em;
+	padding: 0;
+	margin: 0;
 }
 	
 .product {
@@ -29,7 +30,7 @@
 	height: 500px;
 	background: #969A97;
 	text-align: center;
-	margin: 0 auto 0 auto;
+	margin: 30px auto 30px auto;
 }
 
 .product h1 {
@@ -38,6 +39,8 @@
 	text-align: left;
 	font-size: 60px;
 	color: #252323;
+	padding: 0;
+	margin: 0;
 }
 
 .product h2 {
@@ -45,4 +48,6 @@
 	text-align: left;
 	font-size: 35px;
 	color: #FFC857;
+	padding: 0;
+	margin: 0;
 }
