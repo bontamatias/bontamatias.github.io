@@ -13,35 +13,36 @@
 		<link href="products.css" rel="stylesheet" type="text/css">
 		<link href="shadows.css" rel="stylesheet" type="text/css">
 		
-		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,700" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:700" rel="stylesheet">
+		
 		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200" rel="stylesheet">
 		
 		<link href="https://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Nunito:900" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:700" rel="stylesheet">
 
 		
 
 		<title>C2D</title>
 
 		<script type="text/javascript" src="iscroll.js"></script>
-
+		<script type="text/javascript" src="demoUtils.js"></script>
 		<script type="text/javascript">
 			var myScroll;
 			function loaded () {
 				myScroll = new IScroll('#wrapper', {
 					scrollY: true,
 					scrollX: false,
-					momentum: false,
-					preventDefault: false,
+					momentum: true,
+					deceleration: 10000,
+					preventDefaultException:{ tagName: /^(INPUT|TEXTAREA|BUTTON|SELECT|P)$/ },
 					disablePointer: true,
 					snap: 'li',
 					mouseWheel: true,
 					keyBindings: true,
 					momentum: false,
 					bounce: true,
-					bounceTime: 1000,
+					bounceTime: 100,
 					snapSpeed: 1500,
 					keyBindings: {
 						pageUp: 34,
@@ -86,17 +87,17 @@
 				<div class="sitenav">
 					<ul>
 						<li>
-							<a href="javascript:myScroll.scrollToElement(document.querySelector('#scroller li:nth-child(1)'))" class="navbutton">
+							<a href="javascript:myScroll.scrollToElement(document.querySelector('#splash-page'))" class="navbutton">
 								<span>home</span>
 							</a>
 						</li>
 						<li>
-							<a href="javascript:myScroll.scrollToElement(document.querySelector('#scroller li:nth-child(2)'))" class="navbutton">
+							<a href="javascript:myScroll.scrollToElement(document.querySelector('#products'))" class="navbutton">
 								<span>products</span>
 							</a>
 						</li>
 						<li>
-							<a href="javascript:myScroll.scrollToElement(document.querySelector('#scroller li:nth-child(3)'))" class="navbutton">
+							<a href="javascript:myScroll.scrollToElement(document.querySelector('#about-us'))" class="navbutton">
 								<span>about us</span>
 							</a>
 						</li>
