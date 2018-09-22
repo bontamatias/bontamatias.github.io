@@ -84,58 +84,53 @@ header {
 	border: none;
 }
 
+.navbutton span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 .navbutton:before, .navbutton:after {
-	position: absolute;
-	content: "";
-	height: 15px;
-	width: 3px;
-	background: #252323;
-	cursor: pointer;
-	transition: all 0.3s ease;
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background: #252323;
+  transition: all 0.3s ease;
 }
-
 .navbutton:before {
-	right: 0;
-	top: 0;
+  height: 1em;
+  width: 3px;
 }
-
 .navbutton:after {
-	left: 0;
-	bottom: 0;
+  width: 1em;
+  height: 3px;
 }
-
 .navbutton:hover:before {
-	height: 100%;
+  height: 100%;
 }
-
 .navbutton:hover:after {
-	height: 100%;
+  width: 100%;
 }
-
 .navbutton span:before, .navbutton span:after {
-	position: absolute;
-	content: "";
-	width: 15px;
-	height: 3px;
-	background: #252323;
-	transition: all 0.3s ease;
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  background: #252323;
+  transition: all 0.3s ease;
 }
-
 .navbutton span:before {
-	right: 0;
-	top: 0;
+  width: 3px;
+  height: 1em;
 }
-
 .navbutton span:after {
-	left: 0;
-	bottom: 0;
-	
+  width: 1em;
+  height: 3px;
 }
-
 .navbutton span:hover:before {
-	width: 100%;
+  height: 100%;
 }
-
 .navbutton span:hover:after {
-	width: 100%;
+  width: 100%;
 }

@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-#splash-page {
+#about-us {
 /*	background: #DEE3E6;  fallback for old browsers 
 	background: -webkit-linear-gradient(left, #00D787, #00B4AF);
 	background: -o-linear-gradient(left, #00D787, #00B4AF);
@@ -9,7 +9,7 @@
 	background: #F8F4E3;
 }
 
-#splash-page p {
+#about-us p {
 	font-family: 'IBM Plex Sans', sans-sesrif;
 	font-weight: 700;
 /*	font-variant: small-caps;*/
