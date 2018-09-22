@@ -33,8 +33,7 @@
 				myScroll = new IScroll('#wrapper', {
 					scrollY: true,
 					scrollX: false,
-					momentum: true,
-					deceleration: 10000,
+					momentum: false,
 					preventDefaultException:{ tagName: /^(INPUT|TEXTAREA|BUTTON|SELECT|P)$/ },
 					disablePointer: true,
 					snap: 'li',
@@ -42,7 +41,7 @@
 					keyBindings: true,
 					momentum: false,
 					bounce: true,
-					bounceTime: 100,
+					bounceTime: 1000,
 					snapSpeed: 1500,
 					keyBindings: {
 						pageUp: 34,
@@ -87,22 +86,22 @@
 				<div class="sitenav">
 					<ul>
 						<li>
-							<a href="javascript:myScroll.scrollToElement(document.querySelector('#splash-page'))" class="navbutton">
+							<a href="javascript:myScroll.goToPage(0,0)" class="navbutton">
 								<span>home</span>
 							</a>
 						</li>
 						<li>
-							<a href="javascript:myScroll.scrollToElement(document.querySelector('#products'))" class="navbutton">
+							<a href="javascript:myScroll.goToPage(0,1)" class="navbutton">
 								<span>products</span>
 							</a>
 						</li>
 						<li>
-							<a href="javascript:myScroll.scrollToElement(document.querySelector('#about-us'))" class="navbutton">
+							<a href="javascript:myScroll.goToPage(0,2)" class="navbutton">
 								<span>about us</span>
 							</a>
 						</li>
 						<li>
-							<a href="javascript:myScroll.scrollToElement(document.querySelector('#scroller li:nth-child(4)'))" class="navbutton">
+							<a href="javascript:myScroll.goToPage(0,3)" class="navbutton">
 								<span>projects</span>
 							</a>
 						</li>
