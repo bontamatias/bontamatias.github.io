@@ -1,11 +1,14 @@
 @charset "utf-8";
 
+#titlebar {
+	height: 4em;
+	width: 100%;
+	position: relative;
+	background: #FFC857;
+}
+
 #products {
 	background: #F8F4E3;
-	background: -webkit-linear-gradient(bottom, #F8F4E3, #706C61);
-	background: -o-linear-gradient(bottom, #F8F4E3, #706C61);
-	background: -moz-linear-gradient(bottom, #F8F4E3, #706C61);
-	background: linear-gradient(to top, #F8F4E3, #706C61);
 }
 
 #products h {

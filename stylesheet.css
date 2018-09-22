@@ -7,12 +7,12 @@
 }
 
 ::-moz-selection {
-    color: #488286;
+    color: #FFC857;
 	background: none;
 }
 
 ::selection {
-    color: #488286;
+    color: #FFC857;
 }
 
 html {
@@ -77,11 +77,4 @@ main {
 
 .page {
 	height: 100vh;
-}
-
-.fakeheader {
-	height: 4em;
-	width: 100%;
-	position: relative;
-	background: #488286;
 }
