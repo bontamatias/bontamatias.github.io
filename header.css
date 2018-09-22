@@ -5,6 +5,7 @@ header {
 	width: 100%;
 	top: 0;
 	padding: 0;
+	margin: 0;
 	position: fixed;
 	background: none;
 	opacity: 1.0;
@@ -22,51 +23,55 @@ header {
 	height: 100%;
 	padding-top: 2px;
 	text-align: center;
+	margin: 0;
 }
 
 .headerbranding {
 	padding: 0;
+	margin: 0;
 	display: table-cell;
 	vertical-align: middle;
 }
 
 .headerlogo {
 	padding: 0;
+	margin: 0;
 }
 
 .sitenavcontainer {
 	height: 100%;
 	float: right;
 	display: table;
+	padding: 0;
+	margin: 0;
 }
 
 .sitenav {
 	position: relative;
 	width: auto;
-	height: auto;
+	height: 65px;
 	opacity: 1.0;
 	background: none;
 	display: table-cell;
 	vertical-align: middle;
+	padding: 0;
+	margin: 0;
 }
 
 .sitenav ul {
 	list-style-type: none;
-	margin-right: 1em;
-	margin-left: 1em;
 }
 
-.sitenav ul li {
+.sitenav li {
 	display: inline-block;
-	margin-left: 1em;
-	margin-right: 1em;
+	margin-left: 10px;
 }
 
 .navbutton span {
 	position: relative;
 	display: block;
 	color: #252323;
-	padding: 0.5em 1.5em 0.5em 1.5em ;
+	padding: 10px 1.5em 10px 1.5em ;
 }
 
 .navbutton {
