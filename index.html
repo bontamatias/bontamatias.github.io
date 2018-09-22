@@ -19,7 +19,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Nunito:900" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:900" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100" rel="stylesheet">
 
 		
 
@@ -36,7 +36,7 @@
 					momentum: false,
 					preventDefaultException:{ tagName: /^(INPUT|TEXTAREA|BUTTON|SELECT|P)$/ },
 					disablePointer: true,
-					snap: 'li',
+					snap: 'section',
 					mouseWheel: true,
 					keyBindings: true,
 					momentum: false,
@@ -113,8 +113,7 @@
 		<main>
 			<div id="wrapper">
 				<div id="scroller">
-					<ul>
-						<li class ="page" id="splash-page">
+						<section class ="page" id="splash-page">
 							<div class="headerfix"></div>
 							<div id="mainlogocontainer">
 							<svg id="mainlogo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0"
@@ -133,40 +132,42 @@
 							
 							<p>CircleSquared Design</p>
 							
-						</li>				
+						</section>				
 						
-						<li class="page" id="products">
+						<section class="page" id="products">
 							<div id="titlebar"></div>
-						</li>
+							
+							<div class="product">
+								<h1>WoodCaps</h1>
+								<h2>$25.00</h2>
+							</div>
+							
+						</section>
 						
-						<li class="page" id="about-us">
+						<section class="page" id="about-us">
 							<h>who we are</h>
-						</li>
+						</section>
 						
-						<li class="page">
-						</li>
+						<section class="page" id="projects">
+						</section>
 						
-						<li id="bottom">
-							<section id="colorboxes">
+						<section id="bottom">
+							<div id="colorboxes">
 								<div id="color1" class="colorbox"></div>
 								<div id="color2" class="colorbox"></div>
 								<div id="color3" class="colorbox"></div>
 								<div id="color4" class="colorbox"></div>
 								<div id="color5" class="colorbox"></div>			
-							</section>
+							</div>
 
-							<section id="colorvalues">
+							<div id="colorvalues">
 								<div class="colortag"><p>#252323</p></div>
 								<div class="colortag"><p>#706C61</p></div>
 								<div class="colortag"><p>#F8F4E3</p></div>
 								<div class="colortag"><p>#969A97</p></div>
 								<div class="colortag"><p>#FFC857</p></div>
-							</section>
-						</li>
-						
-						
-						
-					</ul>
+							</div>
+						</section>
 				</div>
 			</div>
 		</main>
