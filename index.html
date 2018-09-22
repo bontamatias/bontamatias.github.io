@@ -25,17 +25,25 @@
 			var myScroll;
 			function loaded () {
 				myScroll = new IScroll('#wrapper', {
-				scrollX: false,
-				scrollY: true,
-				momentum: false,
-				snap: true,
-				mouseWheel: true
+					scrollY: true,
+					scrollX: false,
+					momentum: false,
+					snap: 'li',
+					mouseWheel: true,
+					mouseWheelSpeed: 1,
+					keyBindings: true,
+					momentum: false,
+					bounce: true,
+					bounceTime: 1000,
+					snapSpeed: 1500
+		
 				});
 			}
 			document.addEventListener('touchmove', function (e) { e.preventDefault(); }, isPassive() ? {
 				capture: false,
 				passive: false
 			} : false);
+			
 		</script>
 	</head>
 
@@ -96,33 +104,28 @@
 						
 						</li>
 						
+						
+						
 						<li id="bottom">
 							<section id="colorboxes">
-								<div class="color1 colorbox"></div>
-								<div class="color2 colorbox"></div>
-								<div class="color3 colorbox"></div>
-								<div class="color4 colorbox"></div>
-								<div class="color5 colorbox"></div>
-								<div class="color6 colorbox"></div>
-								<div class="color7 colorbox"></div>
-								<div class="color8 colorbox"></div>
-								<div class="color9 colorbox"></div>
-								<div class="color10 colorbox"></div>			
+								<div id="color1" class="colorbox"></div>
+								<div id="color2" class="colorbox"></div>
+								<div id="color3" class="colorbox"></div>
+								<div id="color4" class="colorbox"></div>
+								<div id="color5" class="colorbox"></div>			
 							</section>
 
 							<section id="colorvalues">
-								<div class="colortag"><p>#000000</p></div>
-								<div class="colortag"><p>#111111</p></div>
-								<div class="colortag"><p>#363636</p></div>
-								<div class="colortag"><p>#474747</p></div>
-								<div class="colortag"><p>#A8A8A8</p></div>
-								<div class="colortag"><p>#F8F8F8</p></div>
-								<div class="colortag"><p>#FFFFFF</p></div>
-								<div class="colortag"><p>#00D787</p></div>
-								<div class="colortag"><p>#00B4AF</p></div>
-								<div class="colortag"><p>#DEE3E6</p></div>
-							</section>					
+								<div class="colortag"><p>#252323</p></div>
+								<div class="colortag"><p>#706C61</p></div>
+								<div class="colortag"><p>#F8F4E3</p></div>
+								<div class="colortag"><p>#77878B</p></div>
+								<div class="colortag"><p>#488286</p></div>
+							</section>
 						</li>
+						
+						
+						
 					</ul>
 				</div>
 			</div>

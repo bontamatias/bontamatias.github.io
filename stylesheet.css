@@ -6,8 +6,18 @@
 	box-sizing: border-box;
 }
 
+::-moz-selection {
+    color: #488286;
+	background: none;
+}
+
+::selection {
+    color: #488286;
+}
+
 html {
 	-ms-touch-action: none;
+	background: #F8F4E3;
 }
 
 body,ul,li {
