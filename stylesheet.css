@@ -86,12 +86,13 @@ main {
 }
 
 #splash p {
-	font-family: 'Roboto', sans-serif;
-	font-variant: small-caps;
-	text-transform: uppercase;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-weight: 700;
+/*	font-variant: small-caps;*/
+/*	text-transform: uppercase;*/
 	text-align: center;
 	font-size: 5em;
-	letter-spacing: .1em;
+/*	letter-spacing: .1em;*/
 	color: #FFFFFF;
 	padding: 0em 0em 0em 0em;
 }

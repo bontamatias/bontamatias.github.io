@@ -6,9 +6,10 @@ header {
 	top: 0;
 	padding: 0em 0em 0em 0em;
 	position: fixed;
-	background: #111111;
-	opacity: 0.8;
+	background: none;
+	opacity: 1.0;
 	z-index: 100;
+	vertical-align: middle;
 }
 
 .headerbrandingcontainer {
@@ -39,7 +40,7 @@ header {
 	position: relative;
 	width: auto;
 	height: auto;
-	opacity: 1;
+	opacity: 1.0;
 	background: none;
 	display: table-cell;
 	vertical-align: middle;
@@ -60,14 +61,13 @@ header {
 .navbutton span {
 	position: relative;
 	display: block;
-	width: 100%;
-	height: 100%;
 	color: #FFFFFF;
+	padding: 0.5em 1.5em 0.5em 1.5em ;
 }
 
 .navbutton {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 100;
+	font-family: 'IBM Plex Mono', monospace;
+	font-weight: 700;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -77,64 +77,61 @@ header {
 	cursor: pointer;
 	position: relative;
 	display: inline-block;
-	width: 7em;
-	height: 2.5em;
-	line-height: 2.6em;
 	border: none;
 }
 
 .navbutton:before, .navbutton:after {
 	position: absolute;
 	content: "";
-	height: 0%;
-	width: .1em;
+	height: 15px;
+	width: 3px;
 	background: #FFFFFF;
 	cursor: pointer;
+	transition: all 0.3s ease;
 }
 
 .navbutton:before {
 	right: 0;
 	top: 0;
-	transition: all 0.1s ease;
 }
 
 .navbutton:after {
 	left: 0;
 	bottom: 0;
-	transition: all 0.1s 0.2s ease;
 }
 
 .navbutton:hover:before {
-	transition: all 0.1s 0.2s ease;
 	height: 100%;
 }
 
 .navbutton:hover:after {
-	transition: all 0.1s ease;
 	height: 100%;
 }
 
 .navbutton span:before, .navbutton span:after {
 	position: absolute;
 	content: "";
+	width: 15px;
+	height: 3px;
 	background: #FFFFFF;
+	transition: all 0.3s ease;
 }
 
 .navbutton span:before {
-	left: 0;
+	right: 0;
 	top: 0;
-	width: 0%;
-	height: .1em;
-	transition: all 0.1s 0.1s ease;
 }
 
 .navbutton span:after {
 	left: 0;
 	bottom: 0;
-	width: 100%;
-	height: .1em;
+	
 }
 
 .navbutton span:hover:before {
+	width: 100%;
+}
+
+.navbutton span:hover:after {
 	width: 100%;
 }

@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+#splash p {
+    text-shadow:
+	rgb(20, 144, 120) 1px 1px,
+    rgb(20, 144, 120) 2px 2px,
+    rgb(20, 144, 120) 3px 3px,
+    rgb(20, 144, 120) 4px 4px,
+    rgb(20, 144, 120) 5px 5px,
+    rgb(20, 144, 120) 6px 6px,
+    rgb(20, 144, 120) 7px 7px,
+    rgb(20, 144, 120) 8px 8px,
+    rgb(20, 144, 120) 9px 9px,
+    rgb(20, 144, 120) 10px 10px,
+    rgb(20, 144, 120) 11px 11px,
+    rgb(20, 144, 120) 12px 12px,
+    rgb(20, 145, 121) 13px 13px,
+    rgb(20, 146, 122) 14px 14px,
+    rgb(20, 147, 123) 15px 15px,
+    rgb(20, 148, 123) 16px 16px,
+    rgb(20, 149, 124) 17px 17px,
+    rgb(20, 150, 125) 18px 18px,
+    rgb(20, 151, 126) 19px 19px,
+    rgb(21, 152, 126) 20px 20px,
+    rgb(21, 153, 127) 21px 21px,
+    rgb(21, 154, 128) 22px 22px,
+    rgb(21, 155, 129) 23px 23px,
+    rgb(21, 156, 129) 24px 24px,
+    rgb(21, 157, 130) 25px 25px,
+    rgb(21, 158, 131) 26px 26px,
+    rgb(21, 159, 132) 27px 27px,
+    rgb(22, 160, 133) 28px 28px;
+}
