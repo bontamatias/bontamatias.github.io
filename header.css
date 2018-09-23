@@ -34,7 +34,7 @@ header li {
 	position: relative;
 	display: block;
 	color: #252323;
-	padding: 10px 1.5em 10px 1.5em ;
+	padding: 10px 15px 10px 15px ;
 }
 
 .navbutton {
@@ -43,6 +43,7 @@ header li {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 15px;
+
 	background: none;
 	outline: none !important;
 	cursor: pointer;
@@ -66,11 +67,11 @@ header li {
   transition: all 0.3s ease;
 }
 .navbutton:before {
-  height: 1em;
+  height: 13px;
   width: 3px;
 }
 .navbutton:after {
-  width: 1em;
+  width: 13px;
   height: 3px;
 }
 .navbutton:hover:before {
@@ -89,10 +90,10 @@ header li {
 }
 .navbutton span:before {
   width: 3px;
-  height: 1em;
+  height: 13px;
 }
 .navbutton span:after {
-  width: 1em;
+  width: 13px;
   height: 3px;
 }
 .navbutton span:hover:before {
