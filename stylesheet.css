@@ -36,6 +36,26 @@
     src: url(fonts/Nexa-Bold.woff);
 }
 
+@font-face {
+    font-family: Code Light;
+    src: url(fonts/Code-Light.woff);
+}
+
+@font-face {
+    font-family: Code Bold;
+    src: url(fonts/Code-Bold.woff);
+}
+
+@font-face {
+    font-family: Intro;
+    src: url(fonts/Intro.woff);
+}
+
+@font-face {
+    font-family: Intro Inline;
+    src: url(fonts/Intro-Inline.woff);
+}
+
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;

@@ -11,21 +11,19 @@
 
 #splash-page p {
 	font-family: 'Nexa Bold';
-	font-weight: 900;
-/*	font-variant: small-caps;*/
-/*	text-transform: uppercase;*/
 	text-align: center;
-	font-size: 80px;
-/*	letter-spacing: .1em;*/
+	font-size: 85px;
 	color: #252323;
 	padding: 0;
 }
 
 #mainlogocontainer {
 	padding: 0;
+	margin: 0;
 	text-align: center;
 }
 
 #mainlogo {
 	padding: 0;
+	margin: 0;
 }
