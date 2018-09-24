@@ -26,13 +26,17 @@
 }
 	
 .product {
-	width: 800px;
+	width: 850px;
 	height: 500px;
 	text-align: center;
 	margin: 30px auto 30px auto;
+	position: relative;
 }
 
 .product h1 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
 	font-family: 'Lovelo Line Bold';
 	text-transform: uppercase;
 	text-align: left;
@@ -43,10 +47,17 @@
 }
 
 .product h2 {
+	position: absolute;
+	top: 120px;
+	left: 0px;
 	font-family: 'IBM Plex Mono', monospace;
 	text-align: left;
-	font-size: 35px;
+	font-size: 40px;
 	color: #FFC857;
 	padding: 0;
 	margin: 0;
+}
+
+.product img {
+	width: auto;
 }
