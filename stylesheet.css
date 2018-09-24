@@ -1,5 +1,41 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: Marvin Visions;
+	font-weight: bold;
+    src: url(fonts/MarvinVisions-Bold.woff);
+}
+
+@font-face {
+    font-family: Lovelo Line Light;
+    src: url(fonts/Lovelo-Line-Light.woff);
+}
+
+@font-face {
+    font-family: Lovelo Line Bold;
+    src: url(fonts/Lovelo-Line-Bold.woff);
+}
+
+@font-face {
+    font-family: Lovelo Black;
+    src: url(fonts/Lovelo-Black.woff);
+}
+
+@font-face {
+    font-family: Todi;
+    src: url(fonts/Todi.woff);
+}
+
+@font-face {
+    font-family: Nexa Light;
+    src: url(fonts/Nexa-Light.woff);
+}
+
+@font-face {
+    font-family: Nexa Bold;
+    src: url(fonts/Nexa-Bold.woff);
+}
+
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
