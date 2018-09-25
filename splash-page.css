@@ -9,12 +9,26 @@
 	background: #F8F4E3;
 }
 
-#splash-page p {
-	font-family: 'Nexa Bold';
-	text-align: center;
+.layered {
 	font-size: 85px;
+	font-weight: 900;
 	color: #252323;
 	padding: 0;
+	margin: 0;
+	text-align: center;
+	top: 500px;
+	width: auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+
+#splash-page h1 {
+	font-family: Marvin Visions;
+	z-index: 6;
 }
 
 #mainlogocontainer {
