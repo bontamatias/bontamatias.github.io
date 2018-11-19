@@ -18,7 +18,7 @@
 		var myScroll;
 
 		function loaded () {
-			myScroll = new IScroll('#wrapper', {
+			myScroll = new IScroll('.wrapper', {
 				scrollX: true,
 				scrollY: true,
 				momentum: false,
@@ -57,24 +57,24 @@
 			-ms-touch-action: none;
 		}
 
-		#wrapper {
+		.wrapper {
 			position: absolute;
 			z-index: 0;
-			top: 45px;
-			bottom: 48px;
+			top: 0;
+			bottom: 0;
 			left: 0;
 			width: 100%;
-			background: #ccc;
+			background: #000000;
 			overflow: hidden;
 		}
 
-		#scroller {
+		.scroller {
 			position: absolute;
 			z-index: 0;
+			width: 100%;
+			height: 50vh;
 			-webkit-tap-highlight-color: rgba(0,0,0,0);
-			width: 2000px;
-			height: 2000px;
-			background-color: #a00;
+			background-color: #FFFFFF;
 			-webkit-transform: translateZ(0);
 			-moz-transform: translateZ(0);
 			-ms-transform: translateZ(0);
@@ -100,9 +100,17 @@
 
 		</header>
 
-	<div id="wrapper">
-		<div id="scroller">
-			<div id="page">
+	<div class="wrapper">
+		<div class="scroller">
+			<div class="page">
+
+			</div>
+
+			<div class="page">
+
+			</div>
+
+			<div class="page">
 
 			</div>
 		</div>
