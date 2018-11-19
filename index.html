@@ -8,12 +8,10 @@
 		<link href="stylesheet.css" rel="stylesheet" type="text/css">
 		<link href="header.css" rel="stylesheet" type="text/css">
 		<link href="footer.css" rel="stylesheet" type="text/css">
-		<link href="splash-page.css" rel="stylesheet" type="text/css">
+		<link href="splash-page.scss" rel="stylesheet" type="text/css">
+        <link href="splash-page.css" rel="stylesheet" type="text/css">
 		<link href="about-us.css" rel="stylesheet" type="text/css">
-		<link href="products.css" rel="stylesheet" type="text/css">
-		<link href="shadows.css" rel="stylesheet" type="text/css">
-		<link href="fonts.css" rel="stylesheet" type="text/css">
-		
+		<link href="products.css" rel="stylesheet" type="text/css">		
 		
 		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200" rel="stylesheet">
 		
@@ -21,8 +19,6 @@
 		<link href="https://fonts.googleapis.com/css?family=Nunito:900" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:900" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:200" rel="stylesheet">
-
-		
 
 		<title>C2D</title>
 
@@ -72,16 +68,19 @@
 						<span>home</span>
 					</a>
 				</li>
+                
 				<li>
 					<a href="javascript:myScroll.goToPage(0,1)" class="navbutton">
 						<span>products</span>
 					</a>
 				</li>
+                
 				<li>
 					<a href="javascript:myScroll.goToPage(0,2)" class="navbutton">
 						<span>about us</span>
 					</a>
 				</li>
+                
 				<li>
 					<a href="javascript:myScroll.goToPage(0,3)" class="navbutton">
 						<span>projects</span>
@@ -91,64 +90,36 @@
 		</header>
 			
 		<main>
-			<div id="wrapper">
-				<div id="scroller">
-						<section class ="page" id="splash-page">
-							<div class="headerfix"></div>
-							<div id="mainlogocontainer">
-							<svg id="logo" data-name="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 100 1000 1000" height="600px"><defs><style>.cls-1,.cls-2{fill:none;stroke:#252323;stroke-linecap:square;stroke-miterlimit:10;}.cls-1{stroke-width:100px;}.cls-2{stroke-width:30px;}</style></defs><title>Large Logo</title><circle class="cls-1" cx="500" cy="500" r="200"/><circle class="cls-2" cx="760" cy="240" r="40"/>
-							</svg>								
-							</div>
-							
-							<h1 class="layered">CircleSquared Design</h1>					
-								
-						</section>
-						
-						<section class="page" id="products">
-							<div id="titlebar"></div>
-							
-							<div class="product">
-<!--								<img src="placeholder-pictures/EJskcQSXSOuNg7MUv1Ex_361A4115.jpg" alt="image">-->
-								<h1>WoodCaps</h1>
-								<h2>$25.00</h2>
-							</div>
-							
-						</section>
-						
-						<section class="page" id="about-us">
-							<h>who we are</h>
-						</section>
-						
-						<section class="page" id="projects">
-						</section>
-						
-						<section id="bottom">
-							<div id="colorboxes">
-								<div id="color1" class="colorbox"></div>
-								<div id="color2" class="colorbox"></div>
-								<div id="color3" class="colorbox"></div>
-								<div id="color4" class="colorbox"></div>
-								<div id="color5" class="colorbox"></div>			
-							</div>
+			<div class="wrapper">
+				<div class="scroller">
+                    <section class ="page, splash-page">
+                        <div class="headerfix"></div>
+                        
+                        <div class="mainlogocontainer">	
+                            
+                        </div>
 
-							<div id="colorvalues">
-								<div class="colortag"><p>#252323</p></div>
-								<div class="colortag"><p>#706C61</p></div>
-								<div class="colortag"><p>#F8F4E3</p></div>
-								<div class="colortag"><p>#969A97</p></div>
-								<div class="colortag"><p>#FFC857</p></div>
-							</div>
-						</section>
+                        <h1>CircleSquared Design</h1>					
+                    </section>
+
+<!--                    <section class="page, products">
+                        <div class="titlebar"></div>
+
+                        <div class="product">
+                            <h1>WoodCaps</h1>
+                            <h2>$25.00</h2>
+                        </div>
+                    </section>
+
+                    <section class="page, about-us">
+                        
+                    </section>
+
+                    <section class="page, projects">
+                        
+                    </section>-->
 				</div>
 			</div>
 		</main>
-
-
-	
-	
-		<footer>
-			
-		</footer>
 	</body>
-	
 </html>

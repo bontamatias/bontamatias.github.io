@@ -34,7 +34,7 @@ header li {
 .navbutton span {
 	position: relative;
 	display: block;
-	color: #252323;
+	color: var(--dark);
 	padding: 10px 15px 10px 15px ;
 }
 

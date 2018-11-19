@@ -1,66 +1,5 @@
 @charset "utf-8";
 
-@font-face {
-    font-family: Marvin Visions;
-	font-weight: bold;
-    src: url(fonts/MarvinVisions-Bold.woff);
-}
-
-@font-face {
-    font-family: Lovelo Line Light;
-    src: url(fonts/Lovelo-Line-Light.woff);
-}
-
-@font-face {
-    font-family: Lovelo Line Bold;
-    src: url(fonts/Lovelo-Line-Bold.woff);
-}
-
-@font-face {
-    font-family: Lovelo Black;
-    src: url(fonts/Lovelo-Black.woff);
-}
-
-@font-face {
-    font-family: Todi;
-    src: url(fonts/Todi.woff);
-}
-
-@font-face {
-    font-family: Nexa Light;
-    src: url(fonts/Nexa-Light.woff);
-}
-
-@font-face {
-    font-family: Nexa Bold;
-    src: url(fonts/Nexa-Bold.woff);
-}
-
-@font-face {
-    font-family: Code Light;
-    src: url(fonts/Code-Light.woff);
-}
-
-@font-face {
-    font-family: Code Bold;
-    src: url(fonts/Code-Bold.woff);
-}
-
-@font-face {
-    font-family: Intro;
-    src: url(fonts/Intro.woff);
-}
-
-@font-face {
-    font-family: Intro Inline;
-    src: url(fonts/Intro-Inline.woff);
-}
-
-* {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
 
 ::-moz-selection {
     color: #FFFFFF;
@@ -73,7 +12,6 @@
 
 html {
 	-ms-touch-action: none;
-	background: #F8F4E3;
 }
 
 body {
