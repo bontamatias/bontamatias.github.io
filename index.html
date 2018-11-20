@@ -11,7 +11,6 @@
 		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:200" rel="stylesheet">
 
 		<link rel="stylesheet" href="stylesheet.css">
-		<link rel="buttons" href="buttons.css">
 
 		<title>C2D</title>
 
@@ -22,12 +21,13 @@
 
 		function loaded () {
 			myScroll = new IScroll('.wrapper', {
-				scrollX: true,
+				scrollbars: false,
+				scrollX: false,
 				scrollY: true,
 				momentum: false,
 				preventDefaultException:{ tagName: /^(INPUT|TEXTAREA|BUTTON|SELECT|P)$/ },
 				disablePointer: true,
-				mouseWheel: true,
+				//mouseWheel: true,
 				keyBindings: true,
 				bounce: false,
 				keyBindings: {
@@ -73,8 +73,6 @@
 
 	<body onload="loaded()">
 		<header>
-			<h1>hello</h1>
-			<div class='box foo'>foo</div>
 		</header>
 
 		<div class="wrapper">
