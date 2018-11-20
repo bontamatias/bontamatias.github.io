@@ -24,12 +24,13 @@
 				scrollbars: false,
 				scrollX: false,
 				scrollY: true,
-				momentum: true,
+				momentum: false,
 				preventDefaultException:{ tagName: /^(INPUT|TEXTAREA|BUTTON|SELECT|P)$/ },
 				disablePointer: false,
 				mouseWheel: true,
 				keyBindings: true,
 				bounce: false,
+				snap: 'div',
 			});
 		}
 
@@ -57,11 +58,6 @@
 				width: 100%;
 				height: 100vh;
 				background: #000000;
-				-webkit-transform: translateZ(0);
-				-moz-transform: translateZ(0);
-				-ms-transform: translateZ(0);
-				-o-transform: translateZ(0);
-				transform: translateZ(0);
 			}
 
 			.scroller {
@@ -78,7 +74,6 @@
 	<body onload="loaded()">
 		<header>
 		</header>
-
 		<div class="wrapper">
 			<div class="scroller">
 				<div class="page splash-page" >
