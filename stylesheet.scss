@@ -1,0 +1,40 @@
+/* Scss Document */
+
+$accent: #FCBF49;
+$dark: #2B2B28;
+$neutral: #96938E;
+$light: #F7F7F7;
+$secondary: #E2D8BF;
+
+::-moz-selection {
+  color: #FFFFFF;
+  background: none;
+}
+
+::selection {
+  color: $light;
+}
+
+header {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #E2D8BF;
+}
+
+.page {
+  z-index: 1;
+  position: relative;
+  top: 0;
+  left: 0;
+	height: 100vh;
+	width: 100%;
+  background-color: #2B2B28;
+}
+
+.splash-page {
+  background-color: #FFFFFF;
+}
