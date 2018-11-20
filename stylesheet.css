@@ -16,16 +16,17 @@ header {
   top: 0;
   left: 0;
   height: 50px;
+  width: 100%;
   background-color: #E2D8BF;
 }
 
 .page {
   z-index: 1;
-	height: 50vh;
+	height: 200px;
 	width: 100%;
-  color: #000000
+  background-color: #2B2B28;
 }
 
 .splash-page {
-  color: #2B2B28;
+  background-color: #2B2B28;
 }

@@ -10,6 +10,9 @@
 		<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:900" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:200" rel="stylesheet">
 
+		<link rel="stylesheet" href="stylesheet.css">
+		<link rel="buttons" href="buttons.css">
+
 		<title>C2D</title>
 
 		<script type="text/javascript" src="iScroll.js"></script>
@@ -24,11 +27,9 @@
 				momentum: false,
 				preventDefaultException:{ tagName: /^(INPUT|TEXTAREA|BUTTON|SELECT|P)$/ },
 				disablePointer: true,
-				snap: 'section',
 				mouseWheel: true,
 				keyBindings: true,
 				bounce: false,
-				snapSpeed: 1500,
 				keyBindings: {
 					pageUp: 34,
 					pageDown: 33,
@@ -63,8 +64,7 @@
 			top: 0;
 			left: 0;
 			width: 100%;
-			height: 50px;
-			color: #000000;
+			background: #000000;
 			overflow: hidden;
 		}
 
@@ -74,10 +74,11 @@
 	<body onload="loaded()">
 		<header>
 			<h1>hello</h1>
+			<div class='box foo'>foo</div>
 		</header>
 
 		<div class="wrapper">
-			<div class="page, splash-page">
+			<div class="page splash-page" >
 
 			</div>
 
