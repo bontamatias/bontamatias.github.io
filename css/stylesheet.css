@@ -6,6 +6,9 @@
 ::selection {
   color: #FCBF49; }
 
+:focus {
+  outline: none; }
+
 header {
   z-index: 10;
   position: fixed;
