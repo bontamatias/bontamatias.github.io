@@ -1,0 +1,19 @@
+{
+  "name": "circlesquared",
+  "version": "1.0.0",
+  "description": "website",
+  "main": "index.html",
+  "scripts": {
+	"scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bontamatias/bontamatias.github.io"
+  },
+  "author": "Matias Bonta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bontamatias/bontamatias.github.io/issues"
+  },
+  "homepage": "https://github.com/bontamatias/bontamatias.github.io#readme"
+}
