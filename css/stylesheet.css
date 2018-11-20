@@ -1,14 +1,10 @@
-@charset "utf-8";
-
-
+/* Scss Document */
 ::-moz-selection {
-  color: #FFFFFF;
-  background: none;
-}
+  color: #F7F7F7;
+  background: none; }
 
 ::selection {
-  color: #FFFFFF;
-}
+  color: #F7F7F7; }
 
 header {
   z-index: 10;
@@ -17,19 +13,16 @@ header {
   left: 0;
   height: 50px;
   width: 100%;
-  background-color: #E2D8BF;
-}
+  background-color: #FCBF49; }
 
 .page {
   z-index: 1;
   position: relative;
   top: 0;
   left: 0;
-	height: 100vh;
-	width: 100%;
-  background-color: #2B2B28;
-}
+  height: 100vh;
+  width: 100%;
+  background-color: #96938E; }
 
 .splash-page {
-  background-color: #FFFFFF;
-}
+  background-color: #2B2B28; }

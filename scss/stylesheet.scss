@@ -7,7 +7,7 @@ $light: #F7F7F7;
 $secondary: #E2D8BF;
 
 ::-moz-selection {
-  color: #FFFFFF;
+  color: $light;
   background: none;
 }
 
@@ -22,7 +22,7 @@ header {
   left: 0;
   height: 50px;
   width: 100%;
-  background-color: #E2D8BF;
+  background-color: $accent;
 }
 
 .page {
@@ -32,9 +32,9 @@ header {
   left: 0;
 	height: 100vh;
 	width: 100%;
-  background-color: #2B2B28;
+  background-color: $neutral;
 }
 
 .splash-page {
-  background-color: #FFFFFF;
+  background-color: $dark;
 }
