@@ -1,10 +1,10 @@
 /* Scss Document */
 ::-moz-selection {
-  color: #F7F7F7;
+  color: #FCBF49;
   background: none; }
 
 ::selection {
-  color: #F7F7F7; }
+  color: #FCBF49; }
 
 header {
   z-index: 10;

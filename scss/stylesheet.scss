@@ -7,12 +7,12 @@ $light: #F7F7F7;
 $secondary: #E2D8BF;
 
 ::-moz-selection {
-  color: $light;
+  color: $accent;
   background: none;
 }
 
 ::selection {
-  color: $light;
+  color: $accent;
 }
 
 header {
