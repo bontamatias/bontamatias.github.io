@@ -29,7 +29,8 @@ header {
   text-align: center; }
 
 .tabs {
-  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
   list-style: none;
   display: inline-block;
   position: relative; }
@@ -38,18 +39,18 @@ header {
   text-decoration: none;
   color: #2B2B28;
   text-transform: uppercase;
-  padding: 10px 10px;
+  padding: 10px 20px;
   display: inline-block;
   position: relative;
   z-index: 10;
   transition-duration: 0.6s; }
 
 .tabs .selector {
-  height: 10%;
+  height: 20%;
   display: inline-block;
   position: absolute;
   left: 0;
-  top: 90%;
+  top: 80%;
   transition-duration: 0.6s;
   transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
   background: #FCBF49; }
