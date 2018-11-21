@@ -15,8 +15,7 @@ header {
   top: 0;
   left: 0;
   height: 50px;
-  width: 100%;
-  background-color: #FCBF49; }
+  width: 100%; }
 
 .page {
   z-index: 1;
@@ -24,13 +23,7 @@ header {
   left: 0;
   height: 100vh;
   width: 100%;
-  background-color: #96938E; }
-
-.splash-page {
-  background-color: #2B2B28; }
-
-.products-page {
-  background-color: #FCBF49; }
+  background-color: #F7F7F7; }
 
 .navigation {
   text-align: center; }
@@ -56,8 +49,7 @@ header {
   display: inline-block;
   position: absolute;
   left: 0;
-  bottom: 0;
-  color: #2B2B28;
+  top: 90%;
   transition-duration: 0.6s;
   transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  background: #05abe0; }
+  background: #FCBF49; }
