@@ -50,6 +50,7 @@ header {
   position: absolute;
   left: 0;
   top: 80%;
+  border-radius: 100px;
   transition-duration: 0.5s;
   transition-timing-function: cubic-bezier(0.5, 0.2, 0.25, 1);
   background: #FCBF49; }
