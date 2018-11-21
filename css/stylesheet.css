@@ -31,3 +31,39 @@ header {
 
 .products-page {
   background-color: #FCBF49; }
+
+.navigation {
+  text-align: center; }
+
+.tabs {
+  font-size: 15px;
+  list-style: none;
+  background: #FCBF49;
+  display: inline-block;
+  border-radius: 0;
+  position: relative; }
+
+.tabs a {
+  text-decoration: none;
+  color: #2B2B28;
+  text-transform: uppercase;
+  padding: 10px 10px;
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+  transition-duration: 0.6s; }
+
+.tabs a.active {
+  color: #fff; }
+
+.tabs .selector {
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  border-radius: 0;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  background: #05abe0; }

@@ -11,7 +11,9 @@
 		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:200" rel="stylesheet">
 
 		<link rel="stylesheet" href="css/stylesheet.css">
-		<link href="http://sdks.shopifycdn.com/buy-button/latest/buybutton.css" rel="stylesheet" type="text/css" />
+		<link href="http://sdks.shopifycdn.com/buy-button/latest/buybutton.css" rel="stylesheet" type="text/css"/>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 		<title>C2D</title>
 
@@ -50,6 +52,29 @@
 		} : false);
 		</script>
 
+		<script>
+			var tabs = $(".tabs");
+			var items = $(".tabs").find("a").length;
+			var selector = $(".tabs").find(".selector");
+			var activeItem = tabs.find(".active");
+			var activeWidth = activeItem.innerWidth();
+			$(".selector").css({
+			left: activeItem.position.left + "px",
+			width: activeWidth + "px"
+			});
+
+			$(".tabs").on("click", "a", function() {
+			$(".tabs a").removeClass("active");
+			$(this).addClass("active");
+			var activeWidth = $(this).innerWidth();
+			var itemPos = $(this).position();
+			$(".selector").css({
+			left: itemPos.left + "px",
+			width: activeWidth + "px"
+			});
+			});
+		</script>
+
 		<style type="text/css">
 			html {
 				-ms-touch-action: none;
@@ -83,7 +108,19 @@
 
 	<body onload="loaded()">
 		<header>
+
+
+			<div class="navigation">
+				<nav class="tabs">
+					<div class="selector"></div>
+					<a href="#" class="active">home</a>
+					<a href="#">products</a>
+					<a href="#">about us</a>
+					<a href="#">projects</a>
+				</nav>
+			</div>
 		</header>
+
 		<div class="wrapper">
 			<div class="scroller">
 				<div class="page splash-page" >
