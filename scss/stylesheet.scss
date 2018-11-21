@@ -31,7 +31,6 @@ header {
 
 .page {
   z-index: 1;
-  position: relative;
   top: 0;
   left: 0;
 	height: 100vh;
@@ -41,4 +40,8 @@ header {
 
 .splash-page {
   background-color: $dark;
+}
+
+.products-page {
+  background-color: $accent;
 }
