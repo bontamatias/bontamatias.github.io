@@ -1,30 +1,33 @@
 $(function(e) {
+
+  //initial setup of 
   var tabs = $(".tabs");
-  var items = $(".tabs").find("a").length;
   var selector = $(".tabs").find(".selector");
-  var activeItem = tabs.find(".active");
-  var activeWidth = activeItem.innerWidth();
+  var activeTab = tabs.find(".active");
   $(".selector").css({
-    left: activeItem.position.left + "px",
-    width: activeWidth + "px"
+    left: activeTab.position.left + "px",
+    width: activeTab.innerWidth() + "px"
   });
 
   $(".tabs").on("click", "a", function() {
     $(".tabs a").removeClass("active");
     $(this).addClass("active");
-    var activeWidth = $(this).innerWidth();
-    var itemPos = $(this).position();
     $(".selector").css({
-      left: itemPos.left + "px",
-      width: activeWidth + "px"
+      left: $(this).position().left + "px",
+      width: $(this).innerWidth() + "px"
     });
+
+    $(".scroller page").removeClass("active");
+    $(this).addClass("active");
     $(".scroller").css({
-      top: -100 + "vh",
+        top: $(".products").innerHeight + "vh",
     });
+
   });
 
 
-
-
+  /*$(".scroller").css({
+    top: -100 + "vh",
+  });*/
 
 });
