@@ -17,109 +17,16 @@
 
 		<title>C2D</title>
 
-		<script type="text/javascript" src="iscroll.js"></script>
-		<script type="text/javascript">
-
-			var myScroll;
-
-			function loaded () {
-				myScroll = new IScroll(".wrapper", {
-					scrollbars: false,
-					scrollX: false,
-					scrollY: true,
-					momentum: false,
-					preventDefaultException:{ tagName: /^(INPUT|TEXTAREA|BUTTON|SELECT|P)$/ },
-					disablePointer: false,
-					mouseWheel: true,
-					keyBindings: true,
-					bounce: false,
-					snap: ".page",
-					snapSpeed: 500,
-					keyBindings: {
-				    pageUp: 34,
-				    pageDown: 33,
-				    end: 35,
-				    home: 36,
-				    up: 40,
-				    down: 38
-					},
-					bounceEasing: {
-						style: 'cubic-bezier(.5,.2,.25,1)',
-						fn: function (k) { return k; }
-					}
-				});
-			}
-
-			document.addEventListener('touchmove', function (e) { e.preventDefault(); }, isPassive() ? {
-				capture: false,
-				passive: false
-			} : false);
-		</script>
-
-
-
-
+		<script src="navigate.js"></script>
 
 		<style type="text/css">
-			html {
-				-ms-touch-action: none;
-			}
 
-			body {
-				width: 100%;
-				overflow: hidden;
-			}
-
-			.wrapper {
-				position: absolute;
-				z-index: 0;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100vh;
-				background: #000000;
-			}
-
-			.scroller {
-				-webkit-transform: translateZ(0);
-				-moz-transform: translateZ(0);
-				-ms-transform: translateZ(0);
-				-o-transform: translateZ(0);
-				transform: translateZ(0);
-			}
 
 		</style>
 	</head>
 
-	<body onload="loaded()">
+	<body>
 		<header>
-
-			<script type="text/javascript">
-				$(function(e) {
-						var tabs = $(".tabs");
-						var items = $(".tabs").find("a").length;
-						var selector = $(".tabs").find(".selector");
-						var activeItem = tabs.find(".active");
-						var activeWidth = activeItem.innerWidth();
-						$(".selector").css({
-							left: activeItem.position.left + "px",
-							width: activeWidth + "px"
-						});
-
-						$(".tabs").on("click", "a", function() {
-							$(".tabs a").removeClass("active");
-							$(this).addClass("active");
-							var activeWidth = $(this).innerWidth();
-							var itemPos = $(this).position();
-							$(".selector").css({
-								left: itemPos.left + "px",
-								width: activeWidth + "px"
-							});
-						});
-					});
-			</script>
-
-
 			<div class="navigation">
 				<nav class="tabs">
 					<div class="selector"></div>
