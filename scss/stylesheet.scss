@@ -9,12 +9,13 @@ $easing-equation: cubic-bezier(0.50,0.20,0.25,1.00);
 $easing-duration: 0.5s;
 
 ::-moz-selection {
-  color: $accent;
+  color: $secondary;
   background: none;
 }
 
 ::selection {
-  color: $accent;
+  color: $secondary;
+  background: none;
 }
 
 :focus {

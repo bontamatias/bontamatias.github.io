@@ -1,10 +1,11 @@
 /* Scss Document */
 ::-moz-selection {
-  color: #FCBF49;
+  color: #E2D8BF;
   background: none; }
 
 ::selection {
-  color: #FCBF49; }
+  color: #E2D8BF;
+  background: none; }
 
 :focus {
   outline: none; }
