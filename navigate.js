@@ -35,11 +35,6 @@ $(function(e) {
         top: distance + "px",
     });
     console.log("scrolling " + -distance + " pixels from top")
-
-
-
-    console.log(tabs);
-    console.log(pages);
   });
 
 
