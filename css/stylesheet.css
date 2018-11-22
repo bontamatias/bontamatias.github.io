@@ -48,6 +48,7 @@ header {
   z-index: 1;
   top: 0;
   left: 0;
+  height: 100vh;
   width: 100%;
   background-color: #F7F7F7; }
 
@@ -55,8 +56,8 @@ header {
   height: 100vh; }
 
 .products {
-  height: 1000px;
-  background-color: #2B2B28; }
+  height: auto;
+  background-color: #E2D8BF; }
 
 .navigation {
   text-align: center; }

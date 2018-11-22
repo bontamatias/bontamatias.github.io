@@ -31,7 +31,6 @@ $(function(e) {
     for (i = 0; i < tabs.index(this); i++) {
         distance -= $(pages[i]).innerHeight();
     }
-
     $(".scroller").css({
         top: distance + "px",
     });
