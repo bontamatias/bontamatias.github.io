@@ -16,7 +16,7 @@
   //on tab click
   $(".tabs").on("click", "a", function() {
     //change selector position on click
-    console.log("tab: " + tabs.index(this));
+    console.log("tab " + tabs.index(this) + " pressed...");
     $(".tabs .tab").removeClass("active");
     $(this).addClass("active");
     $(".selector").css({
@@ -39,9 +39,117 @@
   });
 
   //on keypress
-  $(document).keypress(function(key) {
-    if(key.which == 13) {
-      console.log("ENTER pressed...");
+  $(document).keydown(function(key) {
+    //scroll down on PageDown pressed, and adjust tab selector (if not at bottom)
+    if (key.which == 34) {
+      console.log("PageDown pressed...");
+      var currentPage = pages.index($(".scroller").find(".active"))
+      if (currentPage < pages.length - 1) {
+        $(".scroller .page").removeClass("active");
+        $(pages[currentPage + 1]).addClass("active");
+        var i;
+        var distance = 0;
+        for (i = 0; i < currentPage + 1; i++) {
+            distance -= $(pages[i]).innerHeight();
+        }
+        $(".scroller").css({
+            top: distance + "px",
+        });
+        console.log("scrolling " + -distance + " pixels from top");
+        $(".tabs .tab").removeClass("active");
+        $(tabs[currentPage + 1]).addClass("active");
+        $(".selector").css({
+          left: $(".tabs").find(".active").position().left + "px",
+          width: $(".tabs").find(".active").innerWidth() + "px"
+        });
+      }
+      else {
+        console.log("Not scrolling: limit reached...")
+      }
+    }
+
+    //scroll up on PageUp pressed, and adjust tab selector (if not at top)
+    if(key.which == 33) {
+      console.log("PageUp pressed...");
+      var currentPage = pages.index($(".scroller").find(".active"))
+      if (currentPage > 0) {
+        $(".scroller .page").removeClass("active");
+        $(pages[currentPage - 1]).addClass("active");
+        var i;
+        var distance = 0;
+        for (i = 0; i < currentPage - 1; i++) {
+            distance -= $(pages[i]).innerHeight();
+        }
+        $(".scroller").css({
+            top: distance + "px",
+        });
+        console.log("scrolling " + -distance + " pixels from top");
+        $(".tabs .tab").removeClass("active");
+        $(tabs[currentPage - 1]).addClass("active");
+        $(".selector").css({
+          left: $(".tabs").find(".active").position().left + "px",
+          width: $(".tabs").find(".active").innerWidth() + "px"
+        });
+      }
+      else {
+        console.log("Not scrolling: limit reached...")
+      }
+    }
+
+    //scroll to bottom on End pressed, and adjust tab selector (if not at bottom)
+    if(key.which == 35) {
+      console.log("End pressed...");
+      var currentPage = pages.index($(".scroller").find(".active"))
+      if (currentPage != pages.length - 1) {
+        $(".scroller .page").removeClass("active");
+        $(pages[pages.length - 1]).addClass("active");
+        var i;
+        var distance = 0;
+        for (i = 0; i < pages.length - 1; i++) {
+            distance -= $(pages[i]).innerHeight();
+        }
+        $(".scroller").css({
+            top: distance + "px",
+        });
+        console.log("scrolling " + -distance + " pixels from top");
+        $(".tabs .tab").removeClass("active");
+        $(tabs[pages.length - 1]).addClass("active");
+        $(".selector").css({
+          left: $(".tabs").find(".active").position().left + "px",
+          width: $(".tabs").find(".active").innerWidth() + "px"
+        });
+      }
+      else {
+        console.log("Not scrolling: limit reached...")
+      }
+    }
+
+    //scroll to top on Home pressed, and adjust tab selector (if not at top)
+    if(key.which == 36) {
+      console.log("Home pressed...");
+      var currentPage = pages.index($(".scroller").find(".active"))
+      if (currentPage != 0) {
+        $(".scroller .page").removeClass("active");
+        $(pages[0]).addClass("active");
+        var i;
+        var distance = 0;
+        for (i = 0; i < 0; i++) {
+            distance -= $(pages[i]).innerHeight();
+        }
+        $(".scroller").css({
+            top: distance + "px",
+        });
+        console.log("scrolling " + -distance + " pixels from top");
+        $(".tabs .tab").removeClass("active");
+        $(tabs[0]).addClass("active");
+        $(".selector").css({
+          left: $(".tabs").find(".active").position().left + "px",
+          width: $(".tabs").find(".active").innerWidth() + "px"
+        });
+      }
+      else {
+        console.log("Not scrolling: limit reached...")
+      }
     }
   });
 
