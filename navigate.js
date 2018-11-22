@@ -1,11 +1,11 @@
-$(function(e) {
+  $(function() {
 
   var tabs = $(".tabs").find(".tab");
   var pages = $(".scroller").find(".page");
   console.log("loaded tabs: 0-" + (tabs.length-1));
   console.log("loaded pages: 0-" + (pages.length-1));
 
-  //initial setup of menu bar selector position
+  //on page load
   var selector = $(".tabs").find(".selector");
   var activeTab = $(".tabs").find(".active");
   $(".selector").css({
@@ -13,6 +13,7 @@ $(function(e) {
     width: activeTab.innerWidth() + "px"
   });
 
+  //on tab click
   $(".tabs").on("click", "a", function() {
     //change selector position on click
     console.log("tab: " + tabs.index(this));
@@ -34,7 +35,14 @@ $(function(e) {
     $(".scroller").css({
         top: distance + "px",
     });
-    console.log("scrolling " + -distance + " pixels from top")
+    console.log("scrolling " + -distance + " pixels from top");
+  });
+
+  //on keypress
+  $(document).keypress(function(key) {
+    if(key.which == 13) {
+      console.log("ENTER pressed...");
+    }
   });
 
 
