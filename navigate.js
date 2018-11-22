@@ -16,7 +16,7 @@ $(function(e) {
   $(".tabs").on("click", "a", function() {
     //change selector position on click
     console.log("tab: " + tabs.index(this));
-    $(".tabs a").removeClass("active");
+    $(".tabs .tab").removeClass("active");
     $(this).addClass("active");
     $(".selector").css({
       left: $(this).position().left + "px",
@@ -24,15 +24,22 @@ $(function(e) {
     });
 
     //scroll page on click
-
-    $(".scroller page").removeClass("active");
+    $(".scroller .page").removeClass("active");
     $(pages[tabs.index(this)]).addClass("active");
+    var i;
+    var distance = 0;
+    for (i = 0; i < tabs.index(this); i++) {
+        distance -= $(pages[i]).innerHeight();
+    }
+
     $(".scroller").css({
-        top: $(".products").innerHeight + "vh",
+        top: distance + "px",
     });
+
+
+
     console.log(tabs);
     console.log(pages);
-
   });
 
 
