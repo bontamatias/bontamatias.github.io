@@ -38,9 +38,4 @@ $(function(e) {
   });
 
 
-  /*$(".scroller").css({
-    top: -100 + "vh",
-  });*/
-
-
 });
