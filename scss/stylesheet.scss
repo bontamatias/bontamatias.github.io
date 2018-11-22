@@ -5,7 +5,8 @@ $dark: #2B2B28;
 $neutral: #96938E;
 $light: #F7F7F7;
 $secondary: #E2D8BF;
-$easing: cubic-bezier(.5,.2,.25,1);
+$easing-equation: cubic-bezier(0.50,0.20,0.25,1.00);
+$easing-duration: 0.5s;
 
 ::-moz-selection {
   color: $accent;
@@ -47,8 +48,8 @@ body {
   -ms-transform: translateZ(0);
   -o-transform: translateZ(0);
   transform: translateZ(0);
-  transition-duration: 0.5s;
-  transition-timing-function: $easing;
+  transition-duration: $easing-duration;
+  transition-timing-function: $easing-equation;
 }
 
 header {
@@ -107,7 +108,7 @@ header {
   left: 0;
   top: 80%;
   border-radius: 100px;
-  transition-duration: 0.5s;
-  transition-timing-function: $easing;
+  transition-duration: $easing-duration;
+  transition-timing-function: $easing-equation;
   background: $accent;
 }

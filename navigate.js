@@ -34,6 +34,7 @@ $(function(e) {
     $(".scroller").css({
         top: distance + "px",
     });
+    console.log("scrolling " + -distance + " pixels from top")
 
 
 
