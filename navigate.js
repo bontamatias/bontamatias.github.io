@@ -32,8 +32,12 @@
     for (i = 0; i < tabs.index(this); i++) {
         distance -= $(pages[i]).innerHeight();
     }
-    $(".scroller").css({
-        top: distance + "px",
+    $(".scroller").animate({
+      top: distance + "px"
+    },{
+      queue: false,
+      easing: "swing",
+      duration: 1000,
     });
     console.log("scrolling " + -distance + " pixels from top");
   });
@@ -154,13 +158,31 @@
   });
 
   //scrollwheel test
-  $('.scroller').bind('mousewheel', function(w) {
-    if(w.originalEvent.wheelDelta /120 > 0) {
-      alert('up');
+  $(".scroller").bind("wheel", function(w) {
+    if(w.originalEvent.deltaY /120 > 0) {
+      var distance = parseInt($(".scroller").css("top"));
+      distance -= $(".wrapper").innerHeight() / 2.5;
     }
     else{
-      alert('down');
+      var distance = parseInt($(".scroller").css("top"));
+      distance += $(".wrapper").innerHeight() / 5;
     }
+    var i;
+    var maximum = 0;
+    for (i = 0; i < pages.length - 1; i++) {
+        maximum -= $(pages[i]).innerHeight();
+    }
+    if(distance >= 0) distance = 0;
+    if(distance <= maximum) distance = maximum;
+    var holdDuration = $(".scroller").css("transition-duration");
+    var holdEquation = $(".scroller").css("transition-timing-function");
+    $(".scroller").animate({
+      top: distance + "px"
+    },{
+      queue: false,
+      easing: "linear",
+      duration: 0,
+    });
   });
 
 
