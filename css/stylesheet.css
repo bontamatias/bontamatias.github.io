@@ -35,8 +35,6 @@ body {
   -ms-transform: translateZ(0);
   -o-transform: translateZ(0);
   transform: translateZ(0);
-  transition-duration: 0.5s;
-  transition-timing-function: cubic-bezier(0.5, 0.2, 0.25, 1); }
 
 header {
   z-index: 10;

@@ -32,8 +32,12 @@
     for (i = 0; i < tabs.index(this); i++) {
         distance -= $(pages[i]).innerHeight();
     }
-    $(".scroller").css({
-        top: distance + "px",
+    $(".scroller").animate({
+      top: distance + "px"
+    },{
+      queue: false,
+      easing: "linear",
+      duration: 0,
     });
     console.log("scrolling " + -distance + " pixels from top");
   });
@@ -172,8 +176,6 @@
     if(distance <= maximum) distance = maximum;
     var holdDuration = $(".scroller").css("transition-duration");
     var holdEquation = $(".scroller").css("transition-timing-function");
-    $(".scroller").css("transition-duration","");
-    $(".scroller").css("transition-timing-function","");
     $(".scroller").animate({
       top: distance + "px"
     },{
@@ -181,8 +183,6 @@
       easing: "linear",
       duration: 0,
     });
-    $(".scroller").css("transition-duration",holdDuration);
-    $(".scroller").css("transition-timing-function",holdEquation);
   });
 
 
