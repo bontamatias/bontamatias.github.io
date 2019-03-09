@@ -158,7 +158,7 @@
     if(w.originalEvent.wheelDelta /120 > 0) {
       var distance = $(".scroller").css("top") + 10;
       $(".scroller").css({
-          top: distance + "px",
+            top: -1000 + "px",
       });
     }
     else{
