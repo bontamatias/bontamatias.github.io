@@ -158,13 +158,15 @@
     if(w.originalEvent.wheelDelta /120 > 0) {
       var distance = parseInt($(".scroller").css("top"));
       distance -= $(".wrapper").innerHeight() / 2.5;
-      $(".scroller").css({
-            top: distance + "px",
-      });
     }
     else{
-      alert('down');
+      var distance = parseInt($(".scroller").css("top"));
+      distance += $(".wrapper").innerHeight() / 2.5;
     }
+    if(distance <= 0) distance = 0;
+    $(".scroller").css({
+          top: distance + "px",
+    });
   });
 
 
