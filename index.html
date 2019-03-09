@@ -24,7 +24,7 @@
 		</style>
 	</head>
 
-	<body onWheel=triggerScroll(event)>
+	<body>
 		<header>
 			<div class="navigation">
 				<nav class="tabs">
@@ -38,7 +38,7 @@
 		</header>
 
 		<div class="wrapper">
-			<div class="scroller">
+			<div class="scroller" onwheel="triggerScroll(event)">
 				<div class="page home active" >
 				</div>
 
@@ -46,6 +46,21 @@
 				</div>
 
 				<div class="page about-us">
+					<div onwheel="myFunction(event)" style="width:100px;height:100px;background-color:Tomato;transition-duration: 0.5s;transition-timing-function: cubic-bezier(0.5, 0.2, 0.25, 1)"></div>
+
+<script>
+  function myFunction(event) {
+    var y = event.deltaY;
+    var currentSize = event.target.style.width;
+    if (y > 0) {
+      newSize = parseInt(currentSize) + 10;
+    } else {
+      newSize = parseInt(currentSize) - 10;
+    }
+    event.target.style.width = newSize + "px";
+    event.target.style.height = newSize + "px";
+  }
+</script>
 				</div>
 
 				<div class="page projects">
