@@ -11,6 +11,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Poppins:900" rel="stylesheet">
 
 		<link rel="stylesheet" href="css/stylesheet.css">
+		<!--<link href="http://sdks.shopifycdn.com/buy-button/latest/buybutton.css" rel="stylesheet" type="text/css"/>-->
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -43,7 +44,104 @@
 				</div>
 
 				<div class="page products">
+					<div id='product-1'>
+			    <!--<script type="text/javascript">
 
+			    (function () {
+			      var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+			      if (window.ShopifyBuy) {
+			        if (window.ShopifyBuy.UI) {
+			          ShopifyBuyInit();
+			        } else {
+			          loadScript();
+			        }
+			      } else {
+			        loadScript();
+			      }
+
+			      function loadScript() {
+			        var script = document.createElement('script');
+			        script.async = true;
+			        script.src = scriptURL;
+			        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+			        script.onload = ShopifyBuyInit;
+			      }
+
+			      function ShopifyBuyInit() {
+			        var client = ShopifyBuy.buildClient({
+			          domain: 'circlesquared.myshopify.com',
+			          storefrontAccessToken: '618cb9ef3987e4f7840444537d2d4d16',
+			        });
+
+			        ShopifyBuy.UI.onReady(client).then(function (ui) {
+			          ui.createComponent('product', {
+			            id: [1434882539620],
+			            node: document.getElementById('product-1'),
+			            moneyFormat: '%24%7B%7Bamount%7D%7D',
+		            	options: {
+										product: {
+											iframe: false,
+											variantId: "all",
+											contents: {
+												img: false,
+												imgWithCarousel: false,
+												title: false,
+												variantTitle: false,
+												price: false,
+												description: false,
+												//buttonWithQuantity: true,
+												button: true,
+											},
+											text: {
+												button: "Add To Cart",
+												outOfStock: "Out Of Stock",
+												unavailable: "Not Available",
+											},
+										},
+										cart: {
+											iframe: false,
+											contents: {
+												title: true,
+												lineItems: true,
+												footer: true,
+											},
+											text: {
+												title: "Cart",
+												empty: "Your cart is empty.",
+												button: "Checkout",
+												total: "Total",
+												currency: "U$D",
+												notice: "Shipping and discount codes are added at checkout.",
+											},
+										},
+										toggle: {
+											iframe: false,
+											contents: {
+												count: true,
+												icon: false,
+												title: true,
+											},
+											text: {
+												title: "CART",
+											},
+										},
+										lineItem: {
+											iframe: false,
+											contents: {
+												image: false,
+												variantTitle: true,
+												title: true,
+												price: true,
+												quantity: true,
+											},
+										},
+									}
+			          });
+			        });
+			      }
+			    })();
+			    </script>-->
+				</div>
 				</div>
 
 				<div class="page about-us">
