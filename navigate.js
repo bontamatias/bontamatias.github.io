@@ -36,8 +36,8 @@
       top: distance + "px"
     },{
       queue: false,
-      easing: "linear",
-      duration: 0,
+      easing: "easeInOutCubic",
+      duration: 100,
     });
     console.log("scrolling " + -distance + " pixels from top");
   });
