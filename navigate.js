@@ -161,7 +161,7 @@
     }
     else{
       var distance = parseInt($(".scroller").css("top"));
-      distance += $(".wrapper").innerHeight() / 2.5;
+      distance += $(".wrapper").innerHeight() / 5;
     }
     var i;
     var maximum = 0;
@@ -175,7 +175,7 @@
     },{
       queue: false,
       easing: "linear",
-      duration: 10,
+      duration: 0,
     });
   });
 
