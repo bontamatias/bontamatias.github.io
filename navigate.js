@@ -173,7 +173,7 @@
     var holdDuration = $(".scroller").css("transition-duration");
     var holdEquation = $(".scroller").css("transition-timing-function");
     $(".scroller").css({
-          transition-duration: 0 + "s",
+          transition-duration: 0,
           transition-timing-function: holdEquation,
           top: distance + "px",
     });
