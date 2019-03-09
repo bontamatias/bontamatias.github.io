@@ -156,9 +156,9 @@
   //scrollwheel test
   $('.scroller').bind('mousewheel', function(w) {
     if(w.originalEvent.wheelDelta /120 > 0) {
-      var distance = $(".scroller").css("top") + 10;
+      var distance = parseInt($(".scroller").css("top")) + 10;
       $(".scroller").css({
-            top: -1000 + "px",
+            top: distance + "px",
       });
     }
     else{
