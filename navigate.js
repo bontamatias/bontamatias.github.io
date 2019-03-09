@@ -37,7 +37,7 @@
     },{
       queue: false,
       easing: "swing",
-      duration: 100,
+      duration: 1000,
     });
     console.log("scrolling " + -distance + " pixels from top");
   });
