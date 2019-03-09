@@ -154,8 +154,8 @@
   });
 
   //scrollwheel test
-  $('.scroller').bind('mousewheel', function(e){
-    if(e.originalEvent.wheelDelta /120 > 0) {
+  $('.scroller').bind('mousewheel', function(w) {
+    if(w.originalEvent.wheelDelta /120 > 0) {
       alert('up');
     }
     else{
