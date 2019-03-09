@@ -170,6 +170,10 @@
     }
     if(distance >= 0) distance = 0;
     if(distance <= maximum) distance = maximum;
+    var holdDuration = $(".scroller").css("transition-duration");
+    var holdEquation = $(".scroller").css("transition-timing-function");
+    $(".scroller").css("transition-duration","");
+    $(".scroller").css("transition-timing-function","");
     $(".scroller").animate({
       top: distance + "px"
     },{
@@ -177,6 +181,8 @@
       easing: "linear",
       duration: 0,
     });
+    $(".scroller").css("transition-duration",holdDuration);
+    $(".scroller").css("transition-timing-function",holdEquation);
   });
 
 
