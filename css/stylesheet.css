@@ -34,7 +34,9 @@ body {
   -moz-transform: translateZ(0);
   -ms-transform: translateZ(0);
   -o-transform: translateZ(0);
-  transform: translateZ(0); }
+  transform: translateZ(0);
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.5, 0.2, 0.25, 1); }
 
 header {
   z-index: 10;
@@ -82,5 +84,5 @@ header {
   background-color: #F7F7F7; }
 
 .products {
-  height: 100vh;
+  height: auto;
   background-color: #E2D8BF; }
