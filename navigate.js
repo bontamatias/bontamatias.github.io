@@ -36,7 +36,7 @@
       top: distance + "px"
     },{
       queue: false,
-      easing: "easeInOutCubic",
+      easing: "swing",
       duration: 100,
     });
     console.log("scrolling " + -distance + " pixels from top");
