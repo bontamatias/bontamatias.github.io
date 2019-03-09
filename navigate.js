@@ -157,7 +157,7 @@
   $(".scroller").bind("mousewheel", function(w) {
     if(w.originalEvent.wheelDelta /120 > 0) {
       var distance = parseInt($(".scroller").css("top"));
-      distance -= $(".wrapper").innerHeight() / 10;
+      distance -= $(".wrapper").innerHeight() / 2.5;
       $(".scroller").css({
             top: distance + "px",
       });
