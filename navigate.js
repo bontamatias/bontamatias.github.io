@@ -155,17 +155,15 @@
 
   //scrollwheel test
   $('.scroller').bind('mousewheel', function(w) {
-    /*
     if(w.originalEvent.wheelDelta /120 > 0) {
-      alert('up');
+      var distance = $(".scroller").css("top") + 10;
+      $(".scroller").css({
+          top: distance + "px",
+      });
     }
     else{
       alert('down');
-    }*/
-    var distance = $(".scroller").css("top") + w.originalEvent.wheelDelta;
-    $(".scroller").css({
-        top: distance + "px",
-    });
+    }
   });
 
 
