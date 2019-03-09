@@ -174,6 +174,8 @@
       top: distance + "px"
     },{
       queue: false,
+      easing: linear,
+      duration: 10,
     });
   });
 
