@@ -170,9 +170,11 @@
     }
     if(distance >= 0) distance = 0;
     if(distance <= maximum) distance = maximum;
-    var holdDuration = $(".scroller").css("transition-duration");
-    var holdEquation = $(".scroller").css("transition-timing-function");
-    $(".scroller").animate({top: distance + "px"});
+    $(".scroller").animate({
+      top: distance + "px"
+    },{
+      queue: false,
+    });
   });
 
 
