@@ -1,10 +1,10 @@
 /* Scss Document */
 
-$accent: #FCBF49;
-$dark: #2B2B28;
-$neutral: #96938E;
-$light: #F7F7F7;
-$secondary: #E2D8BF;
+$accent: #FFBC21;
+$dark: #050505;
+$neutral: #D3CEC4;
+$light: #DDD8CE;
+$secondary: #33302B;
 $easing-equation: cubic-bezier(0.50,0.20,0.25,1.00);
 $easing-duration: 0.5s;
 
@@ -28,7 +28,6 @@ html {
 
 body {
   width: 100%;
-  overflow: hidden;
 }
 
 .wrapper {
@@ -76,7 +75,7 @@ header {
 
 .tabs a {
   text-decoration: none;
-  color: $dark;
+  color: $secondary;
   text-transform: uppercase;
   padding: 10px 20px;
   display: inline-block;

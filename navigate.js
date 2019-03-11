@@ -153,33 +153,16 @@
     }
   });
 
-/*
-
-
-  function triggerScroll(event) {
-    var shift = event.deltaY;
-    var distance = parseInt($(".scroller").css("top")) + shift;
-    var i;
-    var maximum = 0;
-    for (i = 0; i < pages.length - 1; i++) {
-        maximum -= $(pages[i]).innerHeight();
-    }
-    if(distance >= 0) distance = 0;
-    if(distance <= maximum) distance = maximum;
-    $(".scroller").css({
-      top: distance + "px",
-    });
-  }*/
-
-  function triggerScroll(event) {
-  var y = event.deltaY;
-  var currentSize = event.target.style.top;
-  if (y > 0) {
-    newSize = parseInt(currentSize) + 10;
-  } else {
-    newSize = parseInt(currentSize) - 10;
-  }
-  event.target.style.top = newSize + "px";
-}
-
 });
+
+function triggerScroll(event) {
+  var shift = -event.deltaY*5;
+  var distance = parseInt($(".scroller").css("top")) + shift;
+  var i;
+  var maximum = $(".scroller").innerHeight;
+  if(distance >= 0) distance = 0;
+  if(distance <= maximum) distance = maximum;
+  $(".scroller").css({
+    top: distance + "px",
+  });
+}

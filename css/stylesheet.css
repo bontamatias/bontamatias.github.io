@@ -1,10 +1,10 @@
 /* Scss Document */
 ::-moz-selection {
-  color: #E2D8BF;
+  color: #33302B;
   background: none; }
 
 ::selection {
-  color: #E2D8BF;
+  color: #33302B;
   background: none; }
 
 :focus {
@@ -14,8 +14,7 @@ html {
   -ms-touch-action: none; }
 
 body {
-  width: 100%;
-  overflow: hidden; }
+  width: 100%; }
 
 .wrapper {
   position: absolute;
@@ -57,7 +56,7 @@ header {
 
 .tabs a {
   text-decoration: none;
-  color: #2B2B28;
+  color: #33302B;
   text-transform: uppercase;
   padding: 10px 20px;
   display: inline-block;
@@ -72,7 +71,7 @@ header {
   border-radius: 100px;
   transition-duration: 0.5s;
   transition-timing-function: cubic-bezier(0.5, 0.2, 0.25, 1);
-  background: #FCBF49; }
+  background: #FFBC21; }
 
 .page {
   z-index: 1;
@@ -80,8 +79,8 @@ header {
   left: 0;
   height: 100vh;
   width: 100%;
-  background-color: #F7F7F7; }
+  background-color: #DDD8CE; }
 
 .products {
   height: 100vh;
-  background-color: #E2D8BF; }
+  background-color: #33302B; }
