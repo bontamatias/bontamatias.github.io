@@ -29,7 +29,9 @@ header {
 .products {
   height: auto;
   background-color: #FAFAFA;
-  padding: 100px 0 100px 0; }
+  padding: 100px 0 100px 0; 
+  -webkit-scroll-snap-type: mandatory;
+  -webkit-scroll-snap-destination: 50% 50%; }
 
 .product {
   position: relative;
@@ -38,7 +40,8 @@ header {
   margin-right: auto;
   margin-left: auto;
   margin-top: 50px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  -webkit-scroll-snap-coordinate: 50% 50%; }
 
 .product div {
   z-index: 2;
