@@ -22,7 +22,7 @@ header {
   height: 0; }
 
 .page {
-  z-index: -2;
+  z-index: 1;
   height: auto;
   background-color: #FAFAFA; }
 
@@ -41,7 +41,6 @@ header {
   margin-bottom: 50px; }
 
 .product div {
-  z-index: 2;
   position: absolute;
   height: 600px;
   width: 600px;
@@ -49,13 +48,12 @@ header {
   right: 0px; }
 
 .product img {
-  z-index: 3;
   object-fit: contain;
   width: 100%;
   height: 100%; }
 
 .product h1 {
-  z-index: 10;
+  z-index: 1;
   position: absolute;
   font-size: 125px;
   font-family: 'Nunito Sans', sans-serif;
@@ -65,11 +63,11 @@ header {
   height: 200px;
   width: 800px;
   top: 0px;
-  right: 0px;
+  right: 100px;
   white-space: nowrap; }
 
 .product h2 {
-  z-index: 10;
+  z-index: 1;
   position: absolute;
   font-size: 25px;
   font-family: 'Nunito Sans', sans-serif;
@@ -79,5 +77,48 @@ header {
   height: 200px;
   width: 800px;
   top: 0px;
-  right: 0px;
+  right: 100px;
   white-space: nowrap; }
+
+.btn-black {
+  top: 200px;
+  font-size: 20px;
+  padding: 10px 24px 8px 24px;
+  border-color: #050505;
+  border-width: 3px;
+  border-style: solid;
+  background: transparent;
+  cursor: pointer;
+  font-family: 'Nunito Sans', sans-serif;
+  position: absolute;
+  transition: transform 0.2s;
+  color: #050505;
+  z-index: 1; }
+
+.btn-black:hover {
+  transform: translate(16px, -10px);
+  z-index: 1; }
+
+.btn-black:active {
+  transform: translate(8px, -5px);
+  z-index: 1; }
+
+.btn-black:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: translate(16px, -10px);
+  transition: transform 0.2s;
+  background: #FFBC21;
+  z-index: -1; }
+
+.btn-black:hover:before {
+  transform: translate(-16px, 10px);
+  z-index: -1; }
+
+.btn-black:active:before {
+  transform: translate(0, 0);
+  z-index: -1; }
