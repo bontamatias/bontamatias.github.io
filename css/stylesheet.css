@@ -1,12 +1,7 @@
 /* Scss Document */
 * {
   margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent; }
+  padding: 0; }
 
 ::-moz-selection {
   color: #323232;
@@ -28,11 +23,11 @@ header {
 
 .page {
   z-index: -2;
-  height: 100%;
+  height: auto;
   background-color: #FAFAFA; }
 
 .products {
-  height: 100vh;
+  height: auto;
   background-color: #FAFAFA;
   padding: 100px 0 100px 0; }
 

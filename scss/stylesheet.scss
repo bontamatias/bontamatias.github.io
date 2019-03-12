@@ -11,11 +11,6 @@ $easing-duration: 0.5s;
 * {
   margin: 0;
   padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
 }
 
 ::-moz-selection {
@@ -43,12 +38,12 @@ header {
 
 .page {
   z-index: -2;
-  height: 100%;
+  height: auto;
   background-color: $light;
 }
 
 .products {
-  height: 100vh;
+  height: auto;
   background-color: $light;
   padding: 100px 0 100px 0;
 }
