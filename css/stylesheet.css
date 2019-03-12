@@ -4,11 +4,11 @@
   padding: 0; }
 
 ::-moz-selection {
-  color: #323232;
+  color: #FFFFFF;
   background: none; }
 
 ::selection {
-  color: #FFBC21;
+  color: #FFFFFF;
   background: none; }
 
 :focus {
@@ -45,7 +45,7 @@ header {
   position: absolute;
   height: 600px;
   width: 600px;
-  background: #E1E1E1;
+  background: #EAEAEA;
   right: 0px; }
 
 .product img {
