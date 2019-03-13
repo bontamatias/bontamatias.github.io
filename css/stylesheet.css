@@ -63,7 +63,7 @@ header {
   height: 200px;
   width: 800px;
   top: 0px;
-  right: 100px;
+  left: 0px;
   white-space: nowrap; }
 
 .product h2 {
@@ -77,7 +77,7 @@ header {
   height: 200px;
   width: 800px;
   top: 0px;
-  right: 100px;
+  left: 0px;
   white-space: nowrap; }
 
 .btn-black {
@@ -92,16 +92,14 @@ header {
   font-family: 'Nunito Sans', sans-serif;
   position: absolute;
   transition: transform 0.2s;
-  color: #050505;
-  z-index: 1; }
+  transform: translate(0, 0);
+  color: #050505; }
 
 .btn-black:hover {
-  transform: translate(16px, -10px);
-  z-index: 1; }
+  transform: translate(16px, -10px); }
 
 .btn-black:active {
-  transform: translate(8px, -5px);
-  z-index: 1; }
+  transform: translate(8px, -5px); }
 
 .btn-black:before {
   content: "";
@@ -112,13 +110,13 @@ header {
   width: 100%;
   transform: translate(16px, -10px);
   transition: transform 0.2s;
-  background: #FFBC21;
-  z-index: -1; }
+  background: transparent;
+  border-color: #050505;
+  border-width: 3px;
+  border-style: solid; }
 
 .btn-black:hover:before {
-  transform: translate(-16px, 10px);
-  z-index: -1; }
+  transform: translate(-16px, 10px); }
 
 .btn-black:active:before {
-  transform: translate(0, 0);
-  z-index: -1; }
+  transform: translate(0, 0); }

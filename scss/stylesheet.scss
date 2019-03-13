@@ -84,7 +84,7 @@ header {
   height: 200px;
   width: 800px;
   top: 0px;
-  right: 100px;
+  left: 0px;
   white-space: nowrap;
 }
 
@@ -99,7 +99,7 @@ header {
   height: 200px;
   width: 800px;
   top: 0px;
-  right: 100px;
+  left: 0px;
   white-space: nowrap;
 }
 
@@ -118,18 +118,16 @@ $vertical: 10px;
   font-family: 'Nunito Sans', sans-serif;
   position: absolute;
   transition: transform 0.2s;
+  transform: translate(0, 0);
   color: $dark;
-  z-index: 1;
 }
 
 .btn-black:hover {
   transform: translate($horizontal, -$vertical);
-  z-index: 1;
 }
 
 .btn-black:active {
   transform: translate($horizontal / 2, -$vertical / 2);
-  z-index: 1;
 }
 
 .btn-black:before {
@@ -141,16 +139,16 @@ $vertical: 10px;
   width: 100%;
   transform: translate($horizontal, -$vertical);
   transition: transform 0.2s;
-  background: $accent;
-  z-index: -1;
+  background: transparent;
+  border-color: $dark;
+  border-width: 3px;
+  border-style: solid;
 }
 
 .btn-black:hover:before {
   transform: translate(-$horizontal, $vertical);
-  z-index: -1;
 }
 
 .btn-black:active:before {
   transform: translate(0, 0);
-  z-index: -1;
 }
