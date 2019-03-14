@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -13,19 +14,39 @@
 
 		<link rel="stylesheet" href="css/stylesheet.css">
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
 
 		<script>
-			function killLoading() {
+		var activeModal = null;
+		var btn;
+		var products = [];
 
-			}
-		</script>
+		function handleClicks() {
+
+      window.onclick = function(event) {
+				if (activeModal != null && event.target != activeModal) {
+					if (event.target.classList.contains("info-button") && !event.target.parentNode.classList.contains("info-modal")) {
+						activeModal.style.right = "0px";
+						activeModal = event.target.parentNode.getElementsByClassName("info-modal")[0];
+						activeModal.style.right = "400px";
+					}
+					else {
+						activeModal.style.right = "0px";
+					}
+				}
+				else if (event.target.classList.contains("info-button") && !event.target.parentNode.classList.contains("info-modal")) {
+					activeModal = event.target.parentNode.getElementsByClassName("info-modal")[0];
+					activeModal.style.right = "400px";
+				}
+      }
+		}
+    </script>
 
 		<title>C2D</title>
 
 	</head>
 
-	<body onload="handleScrollbar()" onresize="handleScrollbar()">
+	<body onload="handleClicks()">
 		<header>
 			<!--<div class="navigation">
 				<nav class="tabs">
@@ -45,15 +66,22 @@
 			<div class="page products">
 				<div class="product">
 					<div><img src="placeholder-pictures\color-corrected.png"></div>
-					<h1>WK-MK1</h1>
+					<h1>WK-MK2</h1>
 					<h2>LIMITED</h2>
+					<button class="info-button">MORE INFO</button>
+          <div class="info-modal">
+						<button class="info-button">LESS INFO</button>
+          </div>
 				</div>
 
 				<div class="product">
 					<div><img src="placeholder-pictures\color-corrected.png"></div>
 					<h1>WK-MK2</h1>
-					<h2>COMING SOON</h2>
-					<button class="btn-black">MORE INFO</button>
+					<h2>LIMITED</h2>
+					<button class="info-button">MORE INFO</button>
+					<div class="info-modal">
+						<button class="info-button">LESS INFO</button>
+					</div>
 				</div>
 
 				<div class="product">
