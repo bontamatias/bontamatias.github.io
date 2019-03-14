@@ -87,7 +87,7 @@ header {
   height: 200px;
   width: 800px;
   top: 0px;
-  left: 0px;
+  left: 10px;
   white-space: nowrap;
 }
 
@@ -102,7 +102,7 @@ header {
   height: 200px;
   width: 800px;
   top: 0px;
-  left: 0px;
+  left: 10px;
   white-space: nowrap;
 }
 
@@ -137,6 +137,19 @@ header {
   background: $neutral;
   transition-duration: 0.25s;
   transition-timing-function: (0,1.56,0,.61);
+}
+
+.product .info-modal p {
+  z-index: 5;
+  position: absolute;
+  font-size: 20px;
+  font-family: 'Nunito Sans', sans-serif;
+  color: $secondary;
+  transform: rotate();
+  text-align: left;
+  width: 380px;
+  top: 135px;
+  left: 10px;
 }
 
 
