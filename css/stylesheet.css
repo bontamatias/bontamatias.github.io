@@ -4,18 +4,18 @@
   padding: 0; }
 
 ::-moz-selection {
-  color: #FFFFFF;
-  background: none; }
+  color: none;
+  background: #FFBC21; }
 
 ::selection {
-  color: #FFFFFF;
-  background: none; }
+  color: none;
+  background: #EAEAEA; }
 
 :focus {
   outline: none; }
 
-html {
-  -ms-touch-action: none; }
+body {
+  filter: blur(0px); }
 
 header {
   position: absolute;
@@ -58,16 +58,17 @@ header {
 .product h1 {
   z-index: 5;
   position: absolute;
-  font-size: 125px;
-  font-family: 'Nunito Sans', sans-serif;
+  font-size: 140px;
+  font-family: 'Major Mono Display', monospace;
   color: #323232;
   transform: rotate();
   text-align: left;
   height: 200px;
   width: 800px;
-  top: 0px;
+  top: 10px;
   left: 10px;
-  white-space: nowrap; }
+  white-space: nowrap;
+  letter-spacing: -10px; }
 
 .product h2 {
   z-index: 5;
@@ -79,9 +80,24 @@ header {
   text-align: left;
   height: 200px;
   width: 800px;
-  top: 0px;
+  top: 3px;
   left: 10px;
   white-space: nowrap; }
+
+.product h3 {
+  z-index: 5;
+  position: absolute;
+  font-size: 70px;
+  font-family: 'Major Mono Display', monospace;
+  color: #FFBC21;
+  transform: rotate();
+  text-align: left;
+  height: 200px;
+  width: 800px;
+  top: 143px;
+  left: 10px;
+  white-space: nowrap;
+  letter-spacing: -10px; }
 
 .product .info-button {
   z-index: 1;
@@ -90,14 +106,13 @@ header {
   height: 50px;
   width: 200px;
   font-size: 20px;
-  padding: 10px 24px 8px 24px;
   color: #323232;
   border-color: #323232;
-  border-width: 3px;
+  border-width: 1px;
   border-style: solid;
   background: transparent;
   cursor: pointer;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Major Mono Display', monospace;
   position: absolute;
   transition: transform 0.2s;
   transform: translate(0, 0); }
@@ -110,19 +125,19 @@ header {
   position: absolute;
   right: 0px;
   background: #EAEAEA;
-  transition-duration: 0.25s;
+  transition-duration: 0.5s;
   transition-timing-function: 0, 1.56, 0, 0.61; }
 
 .product .info-modal p {
   z-index: 5;
   position: absolute;
-  font-size: 20px;
-  font-family: 'Nunito Sans', sans-serif;
+  font-size: 17px;
+  font-family: 'Major Mono Display', monospace;
   color: #323232;
   transform: rotate();
   text-align: left;
   width: 380px;
-  top: 135px;
+  top: 221px;
   left: 10px; }
 
 /*
