@@ -17,15 +17,19 @@
 		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
 
 		<script>
-		var activeModal = null;
+		var activeModal;
 		var btn;
 		var products = [];
 
 		function handleClicks() {
 
       window.onclick = function(event) {
-				if (activeModal != null && event.target != activeModal) {
-					if (event.target.classList.contains("info-button") && !event.target.parentNode.classList.contains("info-modal")) {
+				if (event.target.classList.contains("info-button") && event.target != activeModal) {
+					if (activeModal == null) {
+						activeModal = event.target.parentNode.getElementsByClassName("info-modal")[0];
+						activeModal.style.right = "400px";
+					}
+					else if (event.target.classList.contains("info-button") && !event.target.parentNode.classList.contains("info-modal")) {
 						activeModal.style.right = "0px";
 						activeModal = event.target.parentNode.getElementsByClassName("info-modal")[0];
 						activeModal.style.right = "400px";
@@ -33,10 +37,6 @@
 					else {
 						activeModal.style.right = "0px";
 					}
-				}
-				else if (event.target.classList.contains("info-button") && !event.target.parentNode.classList.contains("info-modal")) {
-					activeModal = event.target.parentNode.getElementsByClassName("info-modal")[0];
-					activeModal.style.right = "400px";
 				}
       }
 		}
