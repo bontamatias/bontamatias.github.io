@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Marvin Visions Small Variable';
+  src: url(MarvinVisionsSmall-Variable.woff2) format("woff2"), 
+    url(MarvinVisionsSmall-Variable.woff) format("woff"),
+    url(MarvinVisionsSmall-Variable.ttf) format("truetype");
+  font-weight: 20 170;
+}
+
+body {
+  padding: 5vw
+}
+
+p {
+  line-height: 0.8;
+}
+
+.marvin-visions-small-bold {
+  font-family: 'Marvin Visions Small Variable';
+  font-size: 5vw;
+  font-weight: 140;
+  font-variation-settings: 'opsz' 80;
+}
+
+.marvin-visions-small-medium {
+  font-family: 'Marvin Visions Small Variable';
+  font-size: 5vw;
+  font-weight: 110;
+  font-variation-settings: 'opsz' 80;
+}
+
+.marvin-visions-small-regular {
+  font-family: 'Marvin Visions Small Variable';
+  font-size: 5vw;
+  font-weight: 90;
+  font-variation-settings: 'opsz' 80;
+}
+
+.marvin-visions-small-light {
+  font-family: 'Marvin Visions Small Variable';  
+  font-size: 5vw;
+  font-weight: 40;
+  font-variation-settings: 'opsz' 80;
+}
